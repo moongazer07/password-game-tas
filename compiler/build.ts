@@ -22,7 +22,6 @@ function makeESBuildOptions(mode: CompileMode) {
         entryPoints: ["./index.ts"],
         outfile: "password-game-tas.user.js",
         bundle: true,
-        minify: mode == CompileMode.PRODUCTION,
         sourcemap: mode == CompileMode.DEVELOPMENT ? "inline" as const : false,
         banner: {
             js: userscriptBanner
